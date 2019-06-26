@@ -1,7 +1,7 @@
 # location-free-cartography
 The MATLAB code in gsim folder implements the simulations and plots the figures described in the paper "Location-free Spectrum Cartography" by Yves Teganya,  Daniel Romero, Luis Miguel Lopez-Ramos, and Baltasar Beferull-Lozano.
 
-##### Requirements: Matlab 7.10.0(2010a) or later
+##### Requirements: Matlab 9.1.0(2016b) or later
 ## Citation
 If you find our code helpful in your resarch or work, please cite our paper.
 ```
