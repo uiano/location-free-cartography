@@ -16,9 +16,9 @@ If you find our code helpful in your resarch or work, please cite our paper.
   title={Location-free Spectrum Cartography},
   author={Teganya, Yves and Romero, Daniel and Lopez-Ramos, Luis Miguel and Beferull-Lozano, Baltasar},
   journal={IEEE Transactions on Signal Processing},
-  volume={xxxx},
-  number={x},
-  pages={xxxx--xxxx},
+  volume={67},
+  number={15},
+  pages={4013--4026},
   year={2019},
   publisher={IEEE}
 }
