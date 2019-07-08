@@ -5,9 +5,9 @@ The MATLAB code in gsim folder implements the simulations and plots the figures 
 ## Guidelines
 The first time you want to run a simulation after downloading the code, execute
 ```gsimStartup```.
-After that, you will be able to execute any simulation in the aforementioned paper by invoking the function in ```gsim.m```. that will have been created in the folder **gsim/**.
+After that, you will be able to execute any simulation in the aforementioned paper by invoking the function in ```gsim.m```. that will have been created in the folder **gsim/**. 
 
-The experiments reproducing different figures in the paper are organized in functions located in the file ```LocFCartogrExperiments.m```.  The later is located in the folder **Experiments**.
+The experiments reproducing different figures in the paper are organized in functions located in the file ```LocFCartogrExperiments.m```.  The later is located in the folder **Experiments**. Before running any experiment, please change the ```defaultExperimentClassName``` in ```gsim.m``` to  ```'LocFCartogrExperiments'```.
 For example, to run experiment 401 with 100 iterations, type ```gsim (0, 401, 100)```. To just display the results of the last execution of experiment 401 (stored in **Experiments/LocFCartogrExperiments_data**), type ```gsim(1, 401)```. 
 ## Citation
 If you find our code helpful in your resarch or work, please cite our paper.
