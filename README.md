@@ -7,7 +7,7 @@ The first time one wants to run a simulation after downloading the code, one ent
 ```gsimStartup``` on the MATLAB prompt.
 After that, one will be able to execute any simulation in the aforementioned paper by invoking the function in ```gsim.m``` that will have been created in the folder **gsim_locF/**. 
 
-The experiments reproducing different figures in the paper are organized in methods located in the file ```Experiments/LocFCartogrExperiments.m```. The comments before each method indicate which figure on the paper it generates.
+The experiments reproducing different figures in the paper are organized in methods located in the file ```Experiments/LocFCartogrExperiments.m```. The comments before each method indicate which figure(s) on the paper it generates.
 
 One is now all set. For example, to run experiment 401 with 100 iterations, one types ```gsim (0, 401, 100)```. To just display the results of the last execution of experiment 401 (stored in **Experiments/LocFCartogrExperiments_data**), one types ```gsim(1, 401)```. 
 
