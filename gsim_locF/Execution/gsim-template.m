@@ -42,7 +42,7 @@ initializeGsim.initializePath;
 global displaySettings
 
 % EXECUTION PARAMETERS - EDIT =============================================
-defaultExperimentClassName   = 'TemplateExperiments';
+defaultExperimentClassName   = 'LocFCartogrExperiments';
 % defaultExperimentClassName = 'TutorialGFigureExperiments';
 
 defaultExperimentIndex = 1001; 
