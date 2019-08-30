@@ -131,7 +131,7 @@ classdef LocationFreeEstimator < Estimator
        
         
         function [meanErrOnEvalFeat,predictedMeasurements] = estimateGivenEstimatedDistances(obj, coefficients, trainingMeasurements,completedmeasurements,...
-                t_distances,allPointAllSourcePower,combin_sources,orthBasis,avgPower, meanFeat,CovarMat)
+                t_distances,allPointAllSourcePower,combin_sources,orthBasis, meanFeat,CovarMat)
             % Estimate received power using Location Free cartography.
       
             ed_dim = size(t_distances);
@@ -156,7 +156,7 @@ classdef LocationFreeEstimator < Estimator
                         end
                         numberOfMissingFeatAtEval=sum(isnan(evalFeat));
                         if ( numberOfMissingFeatAtEval >featNum -obj.desiredRank) || (size(orthBasis,2) < obj.desiredRank)
-                            predictedMeasurements(kx,ky)=avgPower;
+                            predictedMeasurements(kx,ky)=mean(trainingMeasurements(end,:));
                             continue
                         end
                         

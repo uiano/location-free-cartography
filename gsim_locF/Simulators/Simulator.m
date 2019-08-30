@@ -97,7 +97,7 @@ classdef Simulator
                 
                 [meanErrOnEvalFeat,locFreeMapEstimate] = obj.locFreeEstimator.estimateGivenEstimatedDistances(...
                     locFreeCoefficients,[extractedLocfreeFeaturesToConsider;measurements_power],completedmeasurements,...
-                    estimatedCentersOfMassToConsider,power_out,combin_sources,orthBasis,mean(mean(trueMap)), meanFeature,featCovMat);
+                    estimatedCentersOfMassToConsider,power_out,combin_sources,orthBasis, meanFeature,featCovMat);
                 
             else
                 measurementsLF=[extractedLocfreeFeaturesToConsider;measurements_power];
@@ -107,7 +107,7 @@ classdef Simulator
                 
                 [meanErrOnEvalFeat,locFreeMapEstimate] = obj.locFreeEstimator.estimateGivenEstimatedDistances(... % sugg: change method name to: evaluateEstimatedMap[given features]
                     locFreeCoefficients, measurementsLF,completedmeasurements,...
-                    estimatedCentersOfMassToConsider,power_out,combin_sources,orthBasis,mean(mean(trueMap)), meanFeature,featCovMat);
+                    estimatedCentersOfMassToConsider,power_out,combin_sources,orthBasis, meanFeature,featCovMat);
             end
             
             
