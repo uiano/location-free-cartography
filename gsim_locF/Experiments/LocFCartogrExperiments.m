@@ -20,8 +20,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
         
         % This first experiment plots fig 1a and 1b
         function F=experiment_101(obj,niter)
-            % Figure 1(a) in the paper
-            
+           
             b_toyExample = 0; %activate this flag if you want a shorter experiment
             st = dbstack;
             namestr = st.name;
@@ -230,7 +229,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
         end
         
         % This experiment plots figs. 4 (for the number of sources L=5), 5 and 6
-        % Set niter argument of gism to 50(number of Monte Carlo runs in
+        % Set niter argument of gsim to 50(number of Monte Carlo runs in
         % the experiment)
         function F=experiment_401(obj,niter)
             st = dbstack;
@@ -394,7 +393,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
         end
         
         % This experiment plots the dotdashed curves corresponding to the number
-        % of transmitters L=4 in Fig. 7. Set niter argument of gism to
+        % of transmitters L=4 in Fig. 7. Set niter argument of gsim to
         % 100(number of Monte Carlo runs in the experiment)
         function F=experiment_701(obj,niter)
             st = dbstack;
@@ -488,7 +487,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
         end
         
         % This experiment plots the solid curves corresponds to the number
-        % of transmitters L=7 in Fig. 7. Set niter argument of gism to
+        % of transmitters L=7 in Fig. 7. Set niter argument of gsim to
         % 100(number of Monte Carlo runs in the experiment)
         function F=experiment_702(obj,niter)
             st = dbstack;
@@ -582,7 +581,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
             
         end
         
-        % This experiment plots Fig. 8. Set niter argument of gism to
+        % This experiment plots Fig. 8. Set niter argument of gsim to
         % 200(number of Monte Carlo runs in the experiment)
         function F=experiment_801(obj,niter)
             st = dbstack;
@@ -699,7 +698,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
             F = GFigure('m_multiplot',m_multiplot);
         end
         
-        % This experiment plots Fig. 9. Set niter argument of gism to
+        % This experiment plots Fig. 9. Set niter argument of gsim to
         % 100(number of Monte Carlo runs in the experiment)
         function F=experiment_901(obj,niter)
             st = dbstack;
@@ -916,7 +915,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
             F(2) = GFigure('m_multiplot',m_multiplot2);
         end
         
-        % This experiment plots Fig. 11. Set niter argument of gism to
+        % This experiment plots Fig. 11. Set niter argument of gsim to
         % 200(number of Monte Carlo runs in the experiment)
         function F=experiment_1101(obj,niter)
             st = dbstack;
@@ -1027,7 +1026,7 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
             
         end
         
-        % This experiment plots Fig. 12. Set niter argument of gism to
+        % This experiment plots Fig. 12. Set niter argument of gsim to
         % 200(number of Monte Carlo runs in the experiment)
         function F=experiment_1201(obj,niter)
             st = dbstack;
@@ -1130,8 +1129,9 @@ classdef LocFCartogrExperiments < ExperimentFunctionSet
                 'ch_xlabel','Sensor sensitivity, \Gamma [dBm]','ch_ylabel','NMSE','c_legend',c_legend,...
                 'c_styles', c_styles, 'ch_interpreter', 'latex');
             F = GFigure('m_multiplot',m_multiplot);
-        end
-    end
+		end
+		
+	end
     
     
 end
